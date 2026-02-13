@@ -26,14 +26,9 @@ The text appears pink because the ID selector has the highest specificity
 and overrides the class and element selectors.
 */
 
-
-/* ------------------------------
-   Cute Styling Below
------------------------------- */
-
 body {
-    font-family: 'Georgia', serif;
-    background-color: #fff5f8;
+    font-family: "Times New Roman", Times, serif;
+    background-color: hsl(342, 100%, 98%);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -41,8 +36,12 @@ body {
 
 main {
     max-width: 700px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+#about img {
+    margin-top: 10px;
 }
 
 h1 {
@@ -58,4 +57,24 @@ h2 {
     color: #a44a6b;
 }
 
-/* table styling etc continues here */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid hsl(0, 0%, 80%);
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f8d7e1;
+    font-weight: bold;
+}
