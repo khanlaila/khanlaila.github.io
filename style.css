@@ -1,9 +1,11 @@
+/* task 3 section */
+
 /* Element selector */
 p {
     color: rgb(141, 141, 228);
 }
 
-/* Class selector */ 
+/* Class selector */
 .about-text {
     color: rgb(166, 73, 113);
 }
@@ -20,6 +22,40 @@ p → specificity = 1
 .about-text → specificity = 10
 #about p → specificity = 101 (ID = 100 + element = 1)
 
-The text will appear pink because the ID selector has the highest specificity
+The text appears pink because the ID selector has the highest specificity
 and overrides the class and element selectors.
 */
+
+
+/* ------------------------------
+   Cute Styling Below
+------------------------------ */
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fff5f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #d46a92;
+    font-size: 42px;
+}
+
+section {
+    margin-top: 40px;
+}
+
+h2 {
+    color: #a44a6b;
+}
+
+/* table styling etc continues here */
