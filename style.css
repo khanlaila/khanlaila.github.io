@@ -62,14 +62,21 @@ ul {
     padding-left: 0;
 }
 
+#education p,
+section ul li {
+    color: rgb(141, 141, 228);
+    font-size: 20px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    color: #b76e79;
 }
 
 th, td {
-    border: 1px solid hsl(0, 0%, 80%);
+    border: 1px solid #f0c6d4;
     padding: 10px;
     text-align: center;
 }
@@ -77,4 +84,6 @@ th, td {
 th {
     background-color: #f8d7e1;
     font-weight: bold;
+    color: #a44a6b;
 }
+
