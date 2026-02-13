@@ -1,0 +1,25 @@
+/* Element selector */
+p {
+    color: rgb(141, 141, 228);
+}
+
+/* Class selector */ 
+.about-text {
+    color: rgb(166, 73, 113);
+}
+
+/* ID selector */
+#about p {
+    color: #f4b6c2;
+}
+
+/*
+Specificity Notice:
+
+p → specificity = 1
+.about-text → specificity = 10
+#about p → specificity = 101 (ID = 100 + element = 1)
+
+The text will appear pink because the ID selector has the highest specificity
+and overrides the class and element selectors.
+*/
