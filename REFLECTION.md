@@ -1,11 +1,19 @@
-# Homework 1 - CSCI 39548
+# Homework 2 - CSCI 39548
 # Name: Laila Khan
 
-## 1. Describe the path an HTTP Request takes from a browser to your GitHub Pages site.
-The browser and server communicate using HTTP. Therefore, the browser sends a request via the internet to the web server that hosts the site. Then, the web server locates the HTML file (in this case, index.html) and sends it back to your browser. And finally the browser will be able to display the page!
+## 1. Explain the difference between flex-direction: row and flex-direction: column.
+flex-direction: row places flex items side by side horizontally, which is the default. I used this for my navigation bar so that my logo sits on the left and my nav links sit to the right. All in one horizontal line.
+flex-direction: column stacks flex items side by side vertically, one on top of the other. This was used in my media query to make the navbar and its links collapse downward on mobile, so each link can get its own row instead of being together.
 
-## 2. We discussed Docker Containers in class. Explain how a Docker Container differs from the environment provided by GitHub Pages.
-A Docker container in a sense is a container that takes an application and puts everything an application needs in order to run, such as, libraries, system tools, dependencies, etc. Github pages is different than a Docker container because it hosts only files such as HTML, CSS, and JS. But does not provide control over the actual operating system or runtime environment. Github pages more so serves the files in the repository to users through http. While Docker is able to provide full control over the environment.
+## 2. Why is it important to use relative units (like %, vh, or rem) instead of fixed pixels (px) for responsive design?
+Fixed pixel values do not adapt to different screen sizes. For example, if I set something to 'width: 900px', it would overflow on a small phone screen. The % unit adjusts based on the parents element's size, so a 'width: 100%' card always fills its container whether on a small phone or wide monitor etc. Using relative units means I'm able to write less code and the layout adapts to any device.
 
-## 3. AI Attribution: If you used GenAI (ChatGPT, Claude, etc.) to help write code, you must include the prompt you used and explain one logic error the AI made that you had to fix manually.
-I used Chatgpt to help me when understanding CSS as I was confused on how to structure my HTML layout. An issue that did occur was there would be incorrect placement for (<p>) so I would manually go in and check myself. Also, the spacing was incorrect throughout the page so I manually went in and tested them out. I also used it to help review and teach me different styles when it comes to CSS and also to help me understand how to use html better! 
+## 3. AI Attribution
+Prompt Used: "Write a media query so my navbar links stack vertically on mobile and the height adjusts"
+
+provided code:
+@media (max-width: 768px) {
+  .navbar { flex-direction: column; }
+  .nav-links { flex-direction: column; }
+}
+I had to modify my height because it did not account for fixed height. 
